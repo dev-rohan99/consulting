@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .headerMenuItem{
+        @apply hover:after:content-[''] hover:after:w-[90%] hover:after:h-[3px] hover:after:bg-[#fde428] hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:rounded-full transition duration-500 hover:after:scale-x-[1] hover:after:origin-left
+    }
+
+    .active{
+        @apply bg-[#FFE504] text-[#002E5B]
+    }
+    
+    .swiper-pagination-bullet{
+        @apply w-[15px] h-[15px] bg-transparent border-[2px] border-[#002E5B]
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        @apply bg-[#002E5B]
+    }
+
+    .tabBlock{
+        @apply hidden
+    }
+
+    .tabBlock.activeTwo{
+        @apply block
+    }
+
+    .youtubeChannelImageItem{
+        @apply w-[720px]
+    }
+
+    .youtubeChannelVideoImage{
+        @apply w-[250px]
+    }
+
+}
+
+
+.swiper-pagination-bullet{
+    width: 15px !important;
+    height: 15px !important;
+    background-color: transparent !important;
+    border: 2px solid #002E5B !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #002E5B !important;
+    border: none !important;
+}
+
+.active{
+    color: #002E5B !important;
+}
+
